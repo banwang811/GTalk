@@ -1,0 +1,33 @@
+//
+//  GQSendManger.m
+//  Investment
+//
+//  Created by mac on 15/7/29.
+//
+//
+
+#import "GQSendManager.h"
+#import "GQMessage.h"
+
+@implementation GQSendManager
+
++ (GQSendManager *)shareManager{
+    static GQSendManager *shareManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shareManager = [[GQSendManager alloc] init];
+    });
+    return shareManager;
+}
+
+
+- (GQMessage *)sendTextMessageWithString:(NSString *)content
+                                fromSelf:(BOOL)isSelf{
+    GQMessage *message = [[GQMessage alloc] init];
+    message.isSelf = isSelf;
+    message.content = content;
+    message.messageType = gMessageBodyType_Text;
+    return message;
+}
+
+@end

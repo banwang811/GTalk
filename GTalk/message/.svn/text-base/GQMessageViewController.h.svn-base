@@ -1,0 +1,13 @@
+//
+//  GQMessageViewController.h
+//  Investment
+//
+//  Created by iMac on 15/7/26.
+//
+//
+
+#import <UIKit/UIKit.h>
+
+@interface GQMessageViewController : GQBaseViewController
+
+@end

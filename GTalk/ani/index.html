@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>引导页</title>
+    <meta name="keywords" content="引导页" />
+    <meta name="description" content="引导页" />    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <script type="text/javascript">
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script src="scripts/require.min.js" data-main="scripts/app.js" defer async="true"></script>
+    <style>
+        *{margin:0;padding:0}
+        html,body{height:100%}
+        body{font-family:"microsoft yahei"}
+        .swiper-container{width:100%;height:100%;background:#fff}
+        img{display:block}
+        @-webkit-keyframes start{0%,30%{opacity:0;-webkit-transform:translate(0,10px)}
+            60%{opacity:1;-webkit-transform:translate(0,0)}
+            100%{opacity:0;-webkit-transform:translate(0,-8px)}
+        }@-moz-keyframes start{0%,30%{opacity:0;-moz-transform:translate(0,10px)}
+             60%{opacity:1;-moz-transform:translate(0,0)}
+             100%{opacity:0;-moz-transform:translate(0,-8px)}
+         }@keyframes start{0%,30%{opacity:0;transform:translate(0,10px)}
+              60%{opacity:1;transform:translate(0,0)}
+              100%{opacity:0;transform:translate(0,-8px)}
+          }.ani{position:absolute}
+    </style>
+</head>
+<body>
+<section class="swiper-container" style="opacity: 0">
+    <div class="swiper-wrapper">
+
+        <article class="swiper-slide swiper-slide1" data-hash="page1">
+            <img src="images/p1_01.png" class="ani resize" style="width:320px;left:0;top:92px;z-index:2;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+            <img src="images/p1_02.png" class="ani resize" style="width:320px;left:0;top:47px;z-index:5;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+            <img src="images/p1_03.png" class="ani resize" style="width:320px;left:0;top:52px;z-index:5;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+            <img src="images/p1_04.png" class="ani resize" style="width:320px;left:0;top:223px;z-index:5;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+            <img src="images/p1_05.png" class="ani resize" style="width:320px;left:0;top:67px;z-index:1;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <img src="images/p1_06.png" class="ani resize" style="width:320px;left:0;top:345px;z-index:2;" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s">
+            <img src="images/p1_07.png" class="ani resize" style="width:320px;left:0;top:385px;z-index:2;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">
+        </article>
+
+        <article class="swiper-slide swiper-slide2" data-hash="page2">
+            <img src="images/p2_01.png" class="ani resize" style="width:320px;left:0;top:103px;z-index:2;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <img src="images/p2_02.png" class="ani resize" style="width:320px;left:0;top:231px;z-index:5;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+            <img src="images/p2_03.png" class="ani resize" style="width:320px;left:0;top:110px;z-index:5;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+            <img src="images/p2_04.png" class="ani resize" style="width:320px;left:0;top:150px;z-index:3;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+            <img src="images/p2_05.png" class="ani resize" style="width:320px;left:0;top:147px;z-index:4;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <img src="images/p2_06.png" class="ani resize" style="width:320px;left:0;top:99px;z-index:5;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <img src="images/p2_07.png" class="ani resize" style="width:320px;left:0;top:96px;z-index:3;" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s">
+            <img src="images/p2_08.png" class="ani resize" style="width:320px;left:0;top:38px;z-index:5;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+            <img src="images/p2_09.png" class="ani resize" style="width:320px;left:0;top:71px;z-index:3;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">
+            <img src="images/p2_10.png" class="ani resize" style="width:320px;left:0;top:71px;z-index:4;" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+            <img src="images/p2_11.png" class="ani resize" style="width:320px;left:0;top:163px;z-index:1;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+            <img src="images/p2_12.png" class="ani resize" style="width:320px;left:0;top:345px;z-index:2;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s">
+            <img src="images/p2_13.png" class="ani resize" style="width:320px;left:0;top:385px;z-index:2;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.4s">
+
+        </article>
+
+        <article class="swiper-slide swiper-slide3" data-hash="page3">
+            <img src="images/p3_01.png" class="ani resize" style="width:320px;left:0;top:114px;z-index:4;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+            <img src="images/p3_02.png" class="ani resize" style="width:320px;left:0;top:92px;z-index:3;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            <img src="images/p3_03.png" class="ani resize" style="width:320px;left:0;top:56px;z-index:2;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <img src="images/p3_04.png" class="ani resize" style="width:320px;left:0;top:162px;z-index:5;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">
+            <img src="images/p3_05.png" class="ani resize" style="width:320px;left:0;top:70px;z-index:5;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s">
+            <img src="images/p3_06.png" class="ani resize" style="width:320px;left:0;top:80px;z-index:5;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+            <img src="images/p3_07.png" class="ani resize" style="width:320px;left:0;top:208px;z-index:5;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">
+            <img src="images/p3_08.png" class="ani resize" style="width:320px;left:0;top:47px;z-index:5;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+            <img src="images/p3_09.png" class="ani resize" style="width:320px;left:0;top:253px;z-index:5;" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.1s">
+            <img src="images/p3_10.png" class="ani resize" style="width:320px;left:0;top:66px;z-index:1;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+            <img src="images/p3_11.png" class="ani resize" style="width:320px;left:0;top:345px;z-index:6;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s">
+            <img src="images/p3_12.png" class="ani resize" style="width:320px;left:0;top:385px;z-index:6;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+        </article>
+
+        <article class="swiper-slide swiper-slide4" data-hash="page4">
+            <img src="images/p4_01.png" class="ani resize" style="width:320px;left:0;top:114px;z-index:2;" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+            <img src="images/p4_02.png" class="ani resize" style="width:320px;left:0;top:69px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <img src="images/p4_03.png" class="ani resize" style="width:320px;left:0;top:271px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <img src="images/p4_04.png" class="ani resize" style="width:320px;left:0;top:56px;z-index:3;" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s">
+            <img src="images/p4_05.png" class="ani resize" style="width:320px;left:0;top:170px;z-index:4;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+            <img src="images/p4_06.png" class="ani resize" style="width:320px;left:0;top:70px;z-index:1;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.1s">
+            <img src="images/p4_07.png" class="ani resize" style="width:320px;left:0;top:345px;z-index:5;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s">
+            <img src="images/p4_08.png" class="ani resize" style="width:320px;left:0;top:385px;z-index:5;" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+            <img src="images/p4_09.png" class="ani resize" id="go" style="width:320px;left:0;top:410px;z-index:6;" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.7s">
+        </article>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+</body>
+</html>

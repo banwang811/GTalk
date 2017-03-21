@@ -1,0 +1,21 @@
+//
+//  GQSendManger.h
+//  Investment
+//
+//  Created by mac on 15/7/29.
+//
+//
+
+#import <Foundation/Foundation.h>
+
+@class GQMessage;
+
+@interface GQSendManager : NSObject
+
+
++ (GQSendManager *)shareManager;
+
+- (GQMessage *)sendTextMessageWithString:(NSString *)content
+                                fromSelf:(BOOL)isSelf;
+
+@end

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GQAnnouncementCell" id="KGk-i7-Jjw" customClass="GQAnnouncementCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="255" placeholderIntrinsicHeight="16" text="7月22-24日，请查收你的收益" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kH-Gb-2lf">
+                        <rect key="frame" x="20" y="17" width="255" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-07-20  15:54:25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-9L-1Na">
+                        <rect key="frame" x="20" y="40" width="258" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="u8n-A5-GIL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jr_an.png" translatesAutoresizingMaskIntoConstraints="NO" id="kk2-JX-lSZ">
+                        <rect key="frame" x="292" y="28" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="dBx-wH-278"/>
+                            <constraint firstAttribute="height" constant="14" id="yor-gs-eET"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bWd-9L-1Na" secondAttribute="trailing" constant="42" id="3Pe-bY-lt2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kk2-JX-lSZ" secondAttribute="trailing" constant="12" id="3vj-WN-tS4"/>
+                    <constraint firstItem="bWd-9L-1Na" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8aK-Ob-t3V"/>
+                    <constraint firstAttribute="trailing" secondItem="7kH-Gb-2lf" secondAttribute="trailing" constant="45" id="AJ6-da-B3M"/>
+                    <constraint firstItem="7kH-Gb-2lf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="N9U-h5-cyH"/>
+                    <constraint firstItem="7kH-Gb-2lf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="RpA-Xr-aUO"/>
+                    <constraint firstAttribute="bottom" secondItem="bWd-9L-1Na" secondAttribute="bottom" constant="16" id="fjU-YZ-n02"/>
+                    <constraint firstAttribute="centerY" secondItem="kk2-JX-lSZ" secondAttribute="centerY" id="h0t-vd-JVP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLabel" destination="bWd-9L-1Na" id="iVo-zT-nKh"/>
+                <outlet property="titleLabel" destination="7kH-Gb-2lf" id="HW1-tW-mZ9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jr_an.png" width="8" height="14"/>
+    </resources>
+</document>
